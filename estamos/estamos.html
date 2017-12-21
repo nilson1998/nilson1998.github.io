@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>¿Donde estamos?</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="skeleton.css">
+  <link rel="stylesheet" href="estamos.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #map {
+    height: 500px;
+    width: 1000px;
+    margin:auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+    <div class="dropdown">
+      <div class="dropbtn"><i class="fa fa-wrench" aria-hidden="true"></i> HARDWARE
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="../ordenadores/ordenadores.html">ORDENADORES</a>
+        <a href="../mobiles/mobiles.html">MOVILES</a>
+        <a href="../ratones/ratones.html">RATONES</a>
+        <a href="../teclados/teclados.html">TECLADOS</a>
+        <a href="../audio/audio.html">AURICULARES</a>
+      </div>
+    </div>
+    <a href="../somos/somos.html"><i class="fa fa-id-card" aria-hidden="true"></i> ¿Quiénes somos?</a>
+    <a href="estamos.html"><i class="fa fa-map-marker" aria-hidden="true"></i> ¿Donde estamos?</a>
+  </div>
+  <div class="section values">
+    <h2 class="value-multiplier"><u>ATENCIÓN AL CLIENTE - CONTACTE CON NOSOTROS</u></h2>
+    <br>
+    <br>
+    <div id="map" center></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 41.3975572, lng: 2.147751};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 19,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDgiY4V-jm8dtuyRWyUq0InX2cURWHtN8&callback=initMap">
+    </script>
+<br>
+<br>
+  <h2 class="value-multiplier"><u>INFORMACIÓN DE LA TIENDA</u></h2>
+<br>
+<h4 class="hero-heading"><u>INFORMACIÓN DE LA TINEDA</u></h4>
+<br>
+<p class="value-description"><strong>Estarter</strong></p>
+<ul class="iconos">
+    <li><i class="fa fa-map-pin"></i><a>  L'avernir, 234</a></li>
+    <li><i class="fa fa-phone"></i><a>  Llámanos: 913456967</a></li>
+    <li><i class="fa fa-envelope"></i><a>  E-mail: nilson@gmail.com</a></li>
+</ul>
+<br>
+<p class="value-description"><strong>Horario:</strong></p>
+<p class="value-description"><u>Lunes - Sábado</u></p>
+<ul class="iconos">
+  <li><i class="fa fa-clock-o"></i><a>  Mañana: 10:00 - 14:00</a></li>
+  <li><i class="fa fa-clock-o"></i><a>  Tarde: 16:00 - 20:00</a></li>
+</ul>
+<br>
+<p class="value-description"><u>Domingo</u></p>
+<ul class="iconos">
+  <li><i class="fa fa-clock-o"></i><a>  Cerrado</a></li>
+
+</ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>¿Quiénes somos?</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="skeleton.css">
+  <link rel="stylesheet" href="somos.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a>
+    <div class="dropdown">
+      <div class="dropbtn"><i class="fa fa-wrench" aria-hidden="true"></i> HARDWARE
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="../ordenadores/ordenadores.html">ORDENADORES</a>
+        <a href="../mobiles/mobiles.html">MOVILES</a>
+        <a href="../ratones/ratones.html">RATONES</a>
+        <a href="../teclados/teclados.html">TECLADOS</a>
+        <a href="../audio/audio.html">AURICULARES</a>
+      </div>
+    </div>
+    <a href="somos.html"><i class="fa fa-id-card" aria-hidden="true"></i> ¿Quiénes somos?</a>
+    <a href="../estamos/estamos.html"><i class="fa fa-map-marker" aria-hidden="true"></i> ¿Donde estamos?</a>
+  </div>
+  <div class="section values">
+    <h2 class="value-multiplier"><u>Tu tienda de informática</u></h2>
+    <br>
+    <p>Desde su creación en 2017, Estarter se ha convertido en tu tienda de informática de referencia en Barcelona. Actualmente disponemos de dos espacios ubicados en la calle L'avenir donde encontrarás productos de los fabricantes más relevantes a nivel mundial. En ellos nuestro equipo especializado te asesorará de forma personalizada para que siempre adquieras el producto que más se ajuste a tus necesidades. Así mismo, en nuestra tienda online disfrutarás del mismo compromiso pero con la comodidad de una compra por internet... ¡un clic y directo a casa! Y es que en Estarter trabajamos con stock real, lo que garantiza el envío inmediato de tu pedido desde nuestro almacén a las pocas horas de haberlo realizado.</p>
+    <br>
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="../images/tienda.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="../images/tienda2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="../images/tienda3.jpg" style="width:100%">
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
